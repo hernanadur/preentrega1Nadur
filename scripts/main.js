@@ -63,5 +63,3 @@ while (ingresante < 5) {
       nombreIngresante
   );
 }
-
-suma()
