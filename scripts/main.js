@@ -1,14 +1,22 @@
-let porcentaje = 30;
 let edad = parseInt(prompt("¿Cual es tu edad?"));
 alert("Tu edad ingresada es " + edad);
 console.log("Tu edad es ", edad);
 let precio = 100000;
 let descuento = 0;
+let porcentaje = 30;
 let total = precio;
 if (edad <= 18) {
   descuento = precio * (porcentaje / 100);
-  alert("¡Felicitaciones de acuerdo a tu edad ingresada tienes una bonificacion del " + porcentaje + "%!");
-  console.log("¡Felicitaciones de acuerdo a tu edad ingresada tienes una bonificacion del " + porcentaje + "%!");
+  alert(
+    "¡Felicitaciones de acuerdo a tu edad ingresada tienes una bonificacion del " +
+      porcentaje +
+      "%!"
+  );
+  console.log(
+    "¡Felicitaciones de acuerdo a tu edad ingresada tienes una bonificacion del " +
+      porcentaje +
+      "%!"
+  );
 } else {
   edad > 19;
 }
@@ -16,16 +24,15 @@ total = precio - descuento;
 alert("De acuerdo a tu edad el curso tiene un valor de $ " + total);
 console.log("De acuerdo a tu edad el curso tiene un valor de $ " + total);
 
-const suma = (a,b) => a + b
-const iva = x => x * 0.21
-let valorCurso = total
-let precioFinal = suma(valorCurso, iva(valorCurso))
-alert("EL valor del curso mas iva es de $" + precioFinal)
+const suma = (a, b) => a + b;
+const iva = (x) => x * 0.21;
+let valorCurso = total;
+let precioFinal = suma(valorCurso, iva(valorCurso));
+alert("El valor del curso mas iva es de $" + precioFinal);
 console.log("El valor del curso mas iva es de $" + precioFinal);
 
-
 let ingresante = 0;
-while (ingresante < 10) {
+while (ingresante < 5) {
   nombreIngresante = prompt("¿Cual es tu nombre completo?");
   if (nombreIngresante == "") {
     alert("El nombre tiene que tener algun caracter");
@@ -43,8 +50,18 @@ while (ingresante < 10) {
     continue;
   }
   ingresante++;
-  alert("Felicitaciones ya estas inscripto, tu numero de ingreso es " + ingresante + " Bienvenido a nuestro curso " + nombreIngresante);
-  console.log("Felicitaciones ya estas inscripto, tu numero de ingreso es " + ingresante + " Bienvenido a nuestro curso " + nombreIngresante)
+  alert(
+    "Felicitaciones ya estas inscripto, tu numero de ingreso es el " +
+      ingresante +
+      " Bienvenido a nuestro curso " +
+      nombreIngresante
+  );
+  console.log(
+    "Felicitaciones ya estas inscripto, tu numero de ingreso es el " +
+      ingresante +
+      " Bienvenido a nuestro curso " +
+      nombreIngresante
+  );
 }
 
-
+suma()
