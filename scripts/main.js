@@ -93,13 +93,13 @@ while (ingresante < 2) {
   alert(
     "Felicitaciones ya estas inscripto, tu numero de ingreso es el " +
       ingresante +
-      " Bienvenido a nuestro curso " +
+      ", Bienvenido a nuestro curso " +
       nombreIngresante
   );
   console.log(
     "Felicitaciones ya estas inscripto, tu numero de ingreso es el " +
       ingresante +
-      " Bienvenido a nuestro curso " +
+      ", Bienvenido a nuestro curso " +
       nombreIngresante
   );
 }
